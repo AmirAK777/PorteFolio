@@ -20,9 +20,11 @@
   <!--
     - google font link
   -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
 </head>
 
 <body>
@@ -204,7 +206,8 @@
       <article class="présentation  active" data-page="présentation">
 
         <header>
-          <h2 class="h2 article-title">A propos de moi</h2>
+          <h2 class="h2">A propos de </h2>
+          <h2 class="h2 article-title"> moi</h2>
         </header>
 
         <section class="about-text">
@@ -622,7 +625,7 @@
           <ion-icon name="id-card-outline"></ion-icon>
           <span>CV</span>
         </a>
-      </form>
+        </form>
         <section class="skill">
 
           <h3 class="h3 skills-title">Compétences</h3>
@@ -969,7 +972,7 @@
 
 
       <!--
-        - #BLOG
+        - #Veilles
       -->
 
       <article class="Veilles" data-page="veilles">
@@ -979,70 +982,24 @@
           <h2 class="h2 article-title"> technologiques</h2>
 
         </header>
-
-        <h4 class="h4 timeline-item-title">Présentation de la veille technologique sur le cloud computing</h4>
-        <ol>
-          <h3 class="h3">Introduction</h3>
-          <section class="about-text">
-            <li>Le cloud computing est un modèle de fourniture de services informatiques permettant d'accéder à des
-              ressources informatiques (comme des serveurs, des applications et des données) via internet.</li>
-            <li>Le cloud computing est important pour les entreprises et les organisations car il permet une grande
-              flexibilité, une scalabilité facile et une réduction des coûts en évitant l'achat de matériel informatique
-              coûteux.</li>
-          </section>
-          <li class="h3">Dernières tendances et avancées</li>
-          <section class="about-text">
-            <li>Les services cloud hybrides qui combinent les services de cloud public et privé pour répondre à
-              différents besoins informatiques.</li>
-            <li>Le cloud computing serverless qui permet d'exécuter du code sans avoir à gérer les serveurs
-              sous-jacents.</li>
-            <li>Le multi-cloud qui utilise plusieurs fournisseurs de services cloud pour éviter la dépendance à l'égard
-              d'un seul fournisseur.</li>
-            <li>La sécurité du cloud et la conformité réglementaire qui sont des préoccupations majeures pour les
-              entreprises et les organisations qui utilisent le cloud computing.</li>
-          </section>
-          <li class="h3">Avantages et inconvénients</li>
-          <section class="about-text">
-            <li>Avantages : flexibilité, scalabilité facile, réduction des coûts, accès facile aux données à tout moment
-              et depuis n'importe où.</li>
-            <li>Inconvénients : dépendance vis-à-vis des fournisseurs de services cloud, sécurité des données,
-              conformité réglementaire.</li>
-          </section>
-          <li class="h3">Exemples concrets d'utilisation du cloud computing</li>
-          <section class="about-text">
-            <li>Amazon Web Services (AWS), Microsoft Azure, Google Cloud Platform (GCP), Dropbox, Salesforce.</li>
-            <li>Les entreprises utilisent le cloud computing pour héberger leurs applications et leurs données, pour
-              offrir des services en ligne, pour stocker des données à distance et pour sauvegarder les données en toute
-              sécurité.</li>
-          </section>
-          <li class="h3">Supports visuels</li>
-          <section class="about-text">
-            <li>Des graphiques pour montrer la croissance du marché du cloud computing.</li>
-            <li>Des images pour montrer l'architecture du cloud computing et comment il fonctionne en pratique.</li>
-            <li>Des vidéos pour montrer des exemples d'entreprises qui utilisent le cloud computing et comment elles en
-              tirent parti.</li>
-          </section>
-          <li class="h3">Recommandations pour l'utilisation efficace et sécurisée du cloud computing</li>
-          <section class="about-text">
-            <li>Les meilleures pratiques incluent la formation du personnel, la planification de la migration vers le
-              cloud, la gestion des coûts, la gestion des données et la gestion des risques.</li>
-            <li>Pour choisir un fournisseur de services cloud, il est important de prendre en compte les critères
-              suivants : la sécurité, la disponibilité, la performance, la flexibilité, la conformité réglementaire et
-              les coûts.</li>
-            <li>Il est recommandé de mettre en place une stratégie de sécurité pour protéger les données stockées dans
-              le cloud, comme la cryptage, l'authentification multi-facteurs et la surveillance des activités suspectes.
-            </li>
-            <li>Il est également important de s'assurer que les contrats avec les fournisseurs de services cloud
-              incluent des garanties de sécurité et de confidentialité des données, ainsi que des mécanismes de
-              résolution des conflits.</li>
-          </section>
-          <li class="h3">Conclusion</li>
-          <section class="about-text">
-            <li>Le cloud computing est une technologie en constante évolution qui offre de nombreux avantages aux
-              entreprises et organisations. Cependant, il est important de prendre en compte les risques et de mettre en
-              place des mesures de sécurité pour garantir une utilisation efficace et sécurisée.</li>
-          </section>
-        </ol>
+        <div class="swiper-container">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="assets\images\project-1.jpg"></div>
+            <div class="swiper-slide"><img src="assets\images\project-2.png"></div>
+            <div class="swiper-slide"><img src="assets\images\project-3.jpg"></div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+        <script>
+          var mySwiper = new Swiper('.swiper-container', {
+            // Options de configuration
+            loop: true,
+            pagination: {
+              el: '.swiper-pagination',
+            },
+          })
+        </script>
 
       </article>
 
